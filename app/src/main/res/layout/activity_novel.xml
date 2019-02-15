@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.dailynovel.NovelActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                app:toolbarId="@+id/toolbar">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_novel"
+                    app:layout_collapseMode="parallax" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <ImageView
+                            android:id="@+id/imgCover"
+                            android:layout_width="100dp"
+                            android:layout_height="140dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/cover" />
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_toRightOf="@id/imgCover"
+                            android:text="Bào xuất ngã nhân sinh"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtAuthor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtName"
+                            android:layout_toEndOf="@id/txtAuthor1"
+                            android:layout_marginBottom="3dp"
+                            android:layout_toRightOf="@id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtAuthor1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtName"
+                            android:layout_marginBottom="3dp"
+                            android:text="Tác giả: "
+                            android:layout_toRightOf="@id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtAuthor"
+                            android:layout_toEndOf="@id/txtStatus1"
+                            android:layout_marginBottom="3dp"
+                            android:layout_toRightOf="@id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtStatus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtAuthor"
+                            android:layout_marginBottom="3dp"
+                            android:text="Trạng thái: "
+                            android:layout_toRightOf="@id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtChapter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtStatus"
+                            android:layout_toEndOf="@id/txtChapter1"
+                            android:layout_marginBottom="3dp"
+                            android:layout_toRightOf="@id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtChapter1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtStatus"
+                            android:layout_marginBottom="3dp"
+                            android:text="Số chương: "
+                            android:layout_toRightOf="@id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtGenre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtChapter"
+                            android:layout_toEndOf="@+id/txtGenre1"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txtGenre1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtChapter"
+                            android:text="Thể loại: "
+                            android:layout_toEndOf="@+id/imgCover"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <!--<ToggleButton-->
+                        <!--android:id="@+id/btnToggleLike"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/txtGenre"-->
+                        <!--android:layout_toRightOf="@id/imgCover"-->
+                        <!--android:background="@android:color/transparent"-->
+                        <!--android:drawableTop="@drawable/ic_unlike"-->
+                        <!--android:textOff=""-->
+                        <!--android:textOn="" />-->
+
+                        <ToggleButton
+                            android:id="@+id/btnToggleLike"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/txtGenre"
+                            android:layout_toEndOf="@+id/imgCover"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_unlike"
+                            android:textAllCaps="false"
+                            android:textOff=""
+                            android:textOn=""
+                            android:textSize="1sp" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/activity_novel_content_scrolling" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#FFFF"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/imbComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_comment3"
+                android:text="Bình luận"
+                android:textAllCaps="false"
+                android:textColor="#878787"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnReading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00A99D"
+                android:text="Đọc ngay"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_notify_noncheck"
+                android:hint="Theo dõi"
+                android:textColorHint="#878787"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

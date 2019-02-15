@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imbCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_cancel" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayout1">
+
+
+        <Button
+            android:id="@+id/btnSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/setting_ic_textsize"
+            android:drawablePadding="10dp"
+            android:inputType="textPersonName"
+            android:text="Cỡ chữ"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imbDecrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/setting_ic_textsmaller" />
+
+        <ImageButton
+            android:id="@+id/imbIncrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/imbDecrease"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/setting_ic_textlarger" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayout2">
+
+
+        <Button
+            android:id="@+id/btnBackgroundColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_ic_colorpicker"
+            android:drawablePadding="10dp"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:text="Giao diện"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imbTheme1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/imbTheme2"
+            android:background="@android:color/transparent"
+            android:padding="2dp"
+            android:src="@drawable/ic_theme_1" />
+
+        <ImageButton
+            android:id="@+id/imbTheme2"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/imbTheme3"
+            android:background="@android:color/transparent"
+            android:padding="2dp"
+            android:src="@drawable/ic_theme_2" />
+
+        <ImageButton
+            android:id="@+id/imbTheme3"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="2dp"
+            android:src="@drawable/ic_theme_3" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

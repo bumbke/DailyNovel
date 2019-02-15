@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "889314020714",
+    "project_id": "dailynovel-187910"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889314020714:android:0ff92a4428072c3e",
+        "android_client_info": {
+          "package_name": "main.dailynovel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889314020714-4v6rm92ft57tir2r3anfqievf1be4t48.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "889314020714-7aq8bv1q987fomqi0qtvgvhlhurv19lb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "main.dailynovel",
+            "certificate_hash": "298e8a2ae3a8f87893f2d28d6921d5b3c2bdc2d4"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSbwNOLnn8cfpGp_PHPjrh7ahUDpzCxBI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

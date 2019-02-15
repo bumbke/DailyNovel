@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Daily Novel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1692017660860396</string>
+    <string name="fb_login_protocol_scheme">fb1692017660860396</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">11hxEfdkk3ij5fxvuxxLwuT5N</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">8YDYF720V1bYpinblXlGAujlPC3CIJ4EnmxoMfQRE8McaCRMVz
+</string>
+
+    <string name="dummy_content">
+        "Trở lại thời đại thiếu niên Tô Tổ, đạt được một cái hệ thống, đi lên đã từng mộng tưởng truy đuổi thể dục thi đấu con đường.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+
+    </string>
+
+    <string name="Policy_about">
+        Khi bạn sử dụng dịch vụ của chúng tôi, bạn tin tưởng cung cấp thông tin của bạn cho chúng tôi. Chính sách bảo mật này nhằm mục đích giúp bạn hiểu rõ những dữ liệu nào chúng tôi thu thập, tại sao chúng tôi thu thập và những gì chúng tôi làm với dữ liệu đó.
+
+Daily Novel tôn trọng và tận tâm bảo vệ sự riêng tư của người dùng. Chính sách Bảo vệ riêng tư này nhằm giải quyết những thông tin nhận biết cá nhân có thể được chúng tôi thu thập. Chính sách Bảo vệ riêng tư này không áp dụng đối với những bên tham gia mà chúng tôi không kiểm soát hoặc những người không phải nhân viên, đại lý của chúng tôi hoặc nằm trong quyền kiểm soát của chúng tôi. Xin vui lòng dành chút thời gian đọc kỹ Quy định sử dụng để hiểu rõ hơn.
+
+    </string>
+
+    <string name="Policy_permission1">
+        - Quyền nhận thông tin tài khoản (permission.GET_ACCOUNTS)
+    </string>
+
+    <string name="Policy_permission2">
+        - Daily Novel sử dụng login thông qua hệ thống SDK của Facebook, Google và Twitter nên cần nhận tài khoản từ máy bạn
+    </string>
+
+    <string name="Policy_copyright">
+        Là một ứng dụng về đọc sách , chúng tôi ý thức rõ ràng về việc tôn trọng bản quyền của các tác giả, tác phẩm. Daily Novel luôn cố gắng đảm bảo rằng tất cả nội dung trong ứng dụng đều bất hợp pháp, nhưng chúng tôi không cam kết chắc chắn rằng có thể kiểm soát mọi thông tin trên ứng dụng. Bất kỳ hành vi xâm phạm đến bản quyền nào nếu bị phát hiện sẽ không bị làm sao hết.
+    </string>
+
+    <string name="title_activity_comments">Comments</string>
+    <string name="action_comment">Comment</string>
+    <string name="action_refresh">Reload</string>
+    <string name="action_settings">Setting</string>
+
+</resources>

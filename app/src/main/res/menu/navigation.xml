@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/nav_ic_library"
+        android:title="Thư viện"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/nav_bookcase"
+        android:icon="@drawable/nav_ic_book"
+        android:title="Tủ sách"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/nav_wall"
+        android:enabled="true"
+        android:icon="@drawable/nav_ic_wall"
+        android:title="Tường"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/nav_ic_profile"
+        android:title="Tài khoản"
+        tools:ignore="HardcodedText" />
+
+</menu>

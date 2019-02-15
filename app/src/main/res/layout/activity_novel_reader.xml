@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="main.dailynovel.NovelReaderActivity">
+
+        <!--<android.support.design.widget.CoordinatorLayout-->
+            <!--android:id="@+id/coordinator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<android.support.design.widget.AppBarLayout-->
+                <!--android:id="@+id/app_bar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_light"
+                    android:minHeight="?attr/actionBarSize"
+                    android:textAlignment="center"
+                    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageButton
+                            android:id="@+id/imbBackround"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_backround" />
+
+                        <ImageButton
+                            android:id="@+id/imbNextround"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_toRightOf="@id/imbBackround"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_nextround" />
+
+                        <ImageButton
+                            android:id="@+id/imbComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/imbSetting"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_comment" />
+
+                        <ImageButton
+                            android:id="@+id/imbSetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/ic_settings" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+            <!--</android.support.design.widget.AppBarLayout>-->
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_above="@id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:ignore="UselessLeaf">
+
+                <RelativeLayout
+                    android:id="@+id/relayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#fff"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Chương 1"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/txtContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/txtTitle"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:padding="6dp"
+                        android:text="@string/dummy_content"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+            </ScrollView>
+
+        <!--</android.support.design.widget.CoordinatorLayout>-->
+
+</RelativeLayout>
